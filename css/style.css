@@ -8,7 +8,9 @@
     --secondaryText: #4b5156;
     
     --themeDotBorder: #24292e;
+
     --previewBg: rgb(251, 249, 243, 0.8);
+    --previewShadow: #f0ead6;
 }
 
 html, body {
@@ -126,6 +128,8 @@ ul {
 
 .right-column {
     grid-area: right-column;
+    display: grid;
+    align-content: center;
 }
 
 .dots-wrapper {
@@ -214,6 +218,14 @@ ul {
   border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
+}
+
+#preview-shadow {
+  background-color: var(--previewShadow);
+  width: 300px;
+  height: 180px;
+  padding-left: 30px;
+  padding-top: 30px;
 }
 
 .corner {
