@@ -8,6 +8,7 @@
     --secondaryText: #4b5156;
     
     --themeDotBorder: #24292e;
+    --previewBg: rgb(251, 249, 243, 0.8);
 }
 
 html, body {
@@ -119,6 +120,8 @@ ul {
 
 .left-column {
     grid-area: left-column;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .right-column {
@@ -185,6 +188,31 @@ ul {
 
 #light-mode {
   background-color: #fff;
+}
+
+#blue-mode {
+  background-color: #192734;
+}
+
+#green-mode {
+  background-color: #78866b;
+}
+
+#purple-mode {
+  background-color: #7e4c74;
+}
+
+#settings-note {
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+#preview {
+  width: 300px;
+  border: 1.5 solid #17a2b8;
+  background-color: var(--previewBg);
+  padding: 15px;
 }
 
 @media screen and (max-width: 1200px) {
