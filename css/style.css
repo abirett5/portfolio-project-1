@@ -130,6 +130,8 @@ ul {
     grid-area: right-column;
     display: grid;
     align-content: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .dots-wrapper {
@@ -258,14 +260,17 @@ ul {
 }
 
 @media screen and (max-width: 1200px) {
-    .main-container {
-        width: 95%;
-    }
+  .main-container {
+    width: 95%;
+  }
 }
 
 @media screen and (max-width: 800px) {
   .intro-wrapper {
     grid-template-columns: 1fr;
     grid-template-areas: "nav-wrapper" "left-column" "right-column";
-}
+  }
+  .right-column {
+    justify-content: center;
+  }
 }
