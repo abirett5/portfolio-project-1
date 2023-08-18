@@ -1,12 +1,12 @@
-let theme = localStorage.getItem('theme')
+let theme = localStorage.getItem('theme');
 
 if(theme == null){
 	setTheme('light')
 }else{
 	setTheme(theme)
-}
+};
 
-let themeDots = document.getElementsByClassName('theme-dot')
+let themeDots = document.getElementsByClassName('theme-dot');
 
 
 for (var i=0; themeDots.length > i; i++){
@@ -15,7 +15,7 @@ for (var i=0; themeDots.length > i; i++){
 		// console.log('Option clicked:', mode)
 		setTheme(mode)
 	})
-}
+};
 
 function setTheme(mode){
 	if(mode == 'light'){
@@ -35,4 +35,4 @@ function setTheme(mode){
 	}
 
 	localStorage.setItem('theme', mode)
-}
+};
